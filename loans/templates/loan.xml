@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LoanApplication>
+    <LoanDetails>
+        <LoanID>{{ data.loanId }}</LoanID>
+        <PrincipalAmount>{{ data.principal }}</PrincipalAmount>
+        <Term>{{ data.loanTermMonths }}</Term>
+    </LoanDetails>
+    <BorrowerDetails>
+        <Name>{{ data.borrower.fullName }}</Name>
+        <Email>{{ data.borrower.contactEmail }}</Email>
+        <Address>{{ data.borrower.fullAddress }}</Address>
+    </BorrowerDetails>
+</LoanApplication>
